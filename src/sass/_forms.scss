@@ -1,0 +1,41 @@
+@import './colors';
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	position: relative;
+	padding: 12px;
+	min-width: 300px;
+	.animated-input {
+		border-top: 0;
+		border-left: 0;
+		border-right: 0;
+		outline: none;
+		padding-top: 14px;
+		margin: 10px 0;
+		&::placeholder {
+			transition: all 0.2s ease-in;
+		}
+		&:focus {
+			border-bottom: 2.5px solid $lightgreen;
+			&::placeholder {
+				transform: translateY(-14px);
+				color: $lightgreen;
+			}
+		}
+	}
+	.glowing-input {
+		margin: 10px 0;
+		padding: 3px;
+		transition: all 0.2s ease-in;
+		&:focus {
+			outline: none;
+			border: 1px solid $lightgreen;
+			box-shadow: 0 0 15px $lightgreen;
+			transition: all 0.2s ease-in;
+			&::placeholder {
+				color: $lightgreen;
+			}
+		}
+	}
+}

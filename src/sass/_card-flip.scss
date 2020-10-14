@@ -1,0 +1,54 @@
+@import './colors';
+.card {
+	margin: 100px auto 0;
+	max-width: 400px;
+	min-width: 330px;
+	width: 400px;
+	height: 600px;
+	transition: transform 0.65s ease-in;
+	transform-style: preserve-3d;
+	cursor: pointer;
+	position: relative;
+}
+.card.is-flipped {
+	transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	border-radius: 16px;
+	box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
+}
+.card-front {
+	//background-color: $lightgreen;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	h2 {
+		color: $darkwhite;
+		font-size: 32px;
+	}
+}
+.card-back {
+	//background-color: $darkred;
+	transform: rotateY(180deg);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-evenly;
+	padding: 10px;
+	color: $darkwhite;
+	h2 {
+		font-size: 30px;
+	}
+
+	h5 {
+		text-align: center;
+		word-spacing: 2px;
+		line-height: 30px;
+	}
+}

@@ -1,16 +1,26 @@
-"use strict";
-var gulp = require("gulp");
-var sass = require("gulp-sass");
+'use strict';
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var cleanCSS = require('gulp-clean-css');
+sass.compiler = require('node-sass');
 
-sass.compiler = require("node-sass");
-
-gulp.task("sass", function () {
-  return gulp
-    .src("./src/sass/*.scss")
-    .pipe(sass().on("error", sass.logError))
-    .pipe(gulp.dest("./dist/css"));
+//COMPILING SASS TO CSS
+gulp.task('sass', function () {
+	return gulp.src('./src/sass/*.scss').pipe(sass().on('error', sass.logError)).pipe(gulp.dest('./dist/css'));
+});
+//WARCHING ALL OF THE .SCSS FILES
+gulp.task('watch', function () {
+	gulp.watch('./src/sass/*.scss', gulp.series('sass', 'minify-css'));
 });
 
-gulp.task("watch", function () {
-  gulp.watch("./src/sass/*.scss", gulp.series("sass"));
+//MINIFING THE CSS
+gulp.task('minify-css', () => {
+	return gulp
+		.src('dist/css/*.css')
+		.pipe(
+			cleanCSS({ debug: true }, (details) => {
+				console.log(`${details.name}: ${details.stats.originalSize}`);
+			})
+		)
+		.pipe(gulp.dest('dist/css/min'));
 });

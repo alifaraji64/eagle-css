@@ -1,15 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
 
 * {
-  font-family: "Nunito Sans", sans-serif;
+	font-family: 'Nunito Sans', sans-serif;
 }
 
 *,
 *::after,
 *::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	width: 100%;
+	min-height: 100vh;
 }
 div,
 span,
@@ -32,20 +36,11 @@ del,
 dfn,
 em,
 img,
-ins,
-kbd,
 q,
-samp,
 small,
 strong,
-sub,
-sup,
-var,
 b,
 i,
-dl,
-dt,
-dd,
 ol,
 ul,
 li,
@@ -78,31 +73,32 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: 200;
 }
 button {
-  border: none;
+	border: none;
 }
 nav ul {
-  list-style: none;
+	list-style: none;
 }
 a {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
-  color: unset;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	color: unset;
 }
 hr {
-  display: block;
-  height: 5px;
-  border: 0;
-  border-top: 1px solid #002664;
-  margin: 1em 0;
-  padding: 0;
+	display: block;
+	height: 5px;
+	border: 0;
+	border-top: 1px solid #002664;
+	margin: 1em 0;
+	padding: 0;
 }

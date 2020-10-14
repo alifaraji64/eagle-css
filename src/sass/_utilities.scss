@@ -1,81 +1,84 @@
-@import "./colors";
+@import './colors';
 @mixin border($color, $width) {
-  border: $width solid $color;
+	border: $width solid $color;
 }
 @mixin text-color($color) {
-  color: $color;
+	color: $color;
+}
+@mixin background-color($color) {
+	background-color: $color;
 }
 //BORDERS
 //BORDERS
 //BORDERS
 //red 1px borders
 .border-1-dred {
-  @include border($darkred, 1px);
+	@include border($darkred, 1px);
 }
 .border-1-lred {
-  @include border($lightred, 1px);
+	@include border($lightred, 1px);
 }
 .border-1-red {
-  @include border($lightred, 1px);
+	@include border($lightred, 1px);
 }
 //blue 1px borders
 .border-1-dblue {
-  @include border($darkblue, 1px);
+	@include border($darkblue, 1px);
 }
 .border-1-lblue {
-  @include border($lightblue, 1px);
+	@include border($lightblue, 1px);
 }
 .border-1-blue {
-  @include border($blue, 1px);
+	@include border($blue, 1px);
 }
 //green 1px borders
 .border-1-dgreen {
-  @include border($darkgreen, 1px);
+	@include border($darkgreen, 1px);
 }
 .border-1-lgreen {
-  @include border($lightgreen, 1px);
+	@include border($lightgreen, 1px);
 }
 //gray 1px borders
 .border-1-dgray {
-  @include border($darkgray, 1px);
+	@include border($darkgray, 1px);
 }
 .border-1-lgray {
-  @include border($lightgray, 1px);
+	@include border($lightgray, 1px);
 }
 
 //red 2px borders
 .border-2-dred {
-  @include border($darkred, 2px);
+	@include border($darkred, 2px);
 }
 .border-2-lred {
-  @include border($lightred, 2px);
+	@include border($lightred, 2px);
 }
 .border-2-red {
-  @include border($lightred, 2px);
+	@include border($lightred, 2px);
 }
 //blue 2px borders
 .border-2-dblue {
-  @include border($darkblue, 2px);
+	@include border($darkblue, 2px);
 }
 .border-2-lblue {
-  @include border($lightblue, 2px);
+	@include border($lightblue, 2px);
 }
 .border-2-blue {
-  @include border($blue, 2px);
+	@include border($blue, 2px);
 }
 //green 2px borders
 .border-2-dgreen {
-  @include border($darkgreen, 2px);
+	@include border($darkgreen, 2px);
 }
 .border-2-lgreen {
-  @include border($lightgreen, 2px);
+	@include border($lightgreen, 2px);
 }
 //gray 2px borders
 .border-2-dgray {
-  @include border($darkgray, 2px);
+	@include border($darkgray, 2px);
 }
 .border-2-lgray {
-  @include border($lightgray, 2px);
+	@include border($lightgray, 2px);
 }
 
 //TEXT COLORS
@@ -83,50 +86,129 @@
 //TEXT COLORS
 //red
 .text-dred {
-  @include text-color($darkred);
+	@include text-color($darkred);
 }
 .text-lred {
-  @include text-color($lightred);
+	@include text-color($lightred);
 }
 //blue
 .text-dblue {
-  @include text-color($darkblue);
+	@include text-color($darkblue);
 }
 .text-lblue {
-  @include text-color($lightblue);
+	@include text-color($lightblue);
 }
 .text-blue {
-  @include text-color($blue);
+	@include text-color($blue);
 }
 //green
 .text-dgreen {
-  @include text-color($darkgreen);
+	@include text-color($darkgreen);
 }
 .text-lgreen {
-  @include text-color($lightgreen);
+	@include text-color($lightgreen);
 }
 //gray
 .text-lgray {
-  @include text-color($lightgray);
+	@include text-color($lightgray);
 }
 .text-dgray {
-  @include text-color($darkgray);
+	@include text-color($darkgray);
 }
 .text-lblack {
-  @include text-color($lightblack);
+	@include text-color($lightblack);
 }
 .text-dwhite {
-  @include text-color($darkwhite);
+	@include text-color($darkwhite);
 }
 //FONT-WEIGHT
 //FONT-WEIGHT
 //FONT-WEIGHT
 .semi-bold {
-  font-weight: 500;
+	font-weight: 500;
 }
 .bold {
-  font-weight: 700;
+	font-weight: 700;
 }
 .black {
-  font-weight: 900;
+	font-weight: 900;
+}
+//FONT-SIZE
+//FONT-SIZE
+//FONT-SIZE
+.text-xs {
+	font-size: 10px;
+}
+.text-sm {
+	font-size: 16px;
+}
+.text-md {
+	font-size: 20px;
+}
+.text-lg {
+	font-size: 25px;
+}
+.text-xl {
+	font-size: 36px;
+}
+.text-xxl {
+	font-size: 45px;
+}
+.text-xxxl {
+	font-size: 90px;
+}
+
+//BACKGROUND-COLORS
+//BACKGROUND-COLORS
+//BACKGROUND-COLORS
+.bg-yellow {
+	@include background-color($yellow);
+}
+.bg-dblue {
+	@include background-color($darkblue);
+}
+.bg-blue {
+	@include background-color($blue);
+}
+.bg-lblue {
+	@include background-color($lightblue);
+}
+.bg-skyblue {
+	@include background-color($skyblue);
+}
+.bg-dred {
+	@include background-color($darkred);
+}
+.bg-lred {
+	@include background-color($lightred);
+}
+.bg-lgreen {
+	@include background-color($lightgreen);
+}
+.bg-dgreen {
+	@include background-color($darkgreen);
+}
+.bg-lpink {
+	@include background-color($lightpink);
+}
+.bg-dpink {
+	@include background-color($darkpink);
+}
+.bg-brown {
+	@include background-color($brown);
+}
+.bg-lgray {
+	@include background-color($lightgray);
+}
+.bg-dgray {
+	@include background-color($darkgray);
+}
+.bg-lback {
+	@include background-color($lightblack);
+}
+.bg-dwhite {
+	@include background-color($darkwhite);
+}
+.bg-orange {
+	@include background-color($orange);
 }

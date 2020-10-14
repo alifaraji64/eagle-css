@@ -1,132 +1,132 @@
-@import "./colors";
+@import './colors';
 .checkbox-slide {
-  width: 50px;
-  height: 10px;
-  background: $darkgray;
-  position: relative;
-  border-radius: 50px;
-  transform: scale(2);
+	width: 50px;
+	height: 10px;
+	background: $darkgray;
+	position: relative;
+	border-radius: 50px;
+	//transform: scale(2);
 }
 .checkbox {
-  position: relative;
-  transform: scale(2);
+	position: relative;
+	//transform: scale(2);
 }
 .simple-slide {
-  label {
-    display: block;
-    width: 30%;
-    height: 120%;
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    cursor: pointer;
-    background: $lightgreen;
-    border-radius: 50px;
-    box-shadow: 0px 2px 4px 0px $lightgreen;
-    transition: all 0.4s ease;
-  }
-  input[type="checkbox"] {
-    visibility: hidden;
-    &:checked + label {
-      left: 70%;
-    }
-  }
+	label {
+		display: block;
+		width: 30%;
+		height: 120%;
+		position: absolute;
+		top: -1px;
+		left: 0px;
+		cursor: pointer;
+		background: $lightgreen;
+		border-radius: 50px;
+		box-shadow: 0px 2px 4px 0px $lightgreen;
+		transition: all 0.4s ease;
+	}
+	input[type='checkbox'] {
+		visibility: hidden;
+		&:checked + label {
+			left: 70%;
+		}
+	}
 }
 .light-switch-slide {
-  label {
-    display: block;
-    width: 30%;
-    height: 120%;
-    position: absolute;
-    top: -1px;
-    left: 0px;
-    cursor: pointer;
-    background: $lightgray;
-    border-radius: 50px;
-    transition: all 0.4s ease;
-    &::after {
-      content: "";
-      position: absolute;
-      left: 30%;
-      top: 30%;
-      width: 40%;
-      height: 40%;
-      background-color: $lightred;
-      border-radius: 100%;
-    }
-  }
-  input[type="checkbox"] {
-    visibility: hidden;
-    &:checked + label {
-      left: 70%;
-      &::after {
-        background-color: $lightgreen;
-      }
-    }
-  }
+	label {
+		display: block;
+		width: 30%;
+		height: 120%;
+		position: absolute;
+		top: -1px;
+		left: 0px;
+		cursor: pointer;
+		background: $lightgray;
+		border-radius: 50px;
+		transition: all 0.4s ease;
+		&::after {
+			content: '';
+			position: absolute;
+			left: 30%;
+			top: 30%;
+			width: 40%;
+			height: 40%;
+			background-color: $lightred;
+			border-radius: 100%;
+		}
+	}
+	input[type='checkbox'] {
+		visibility: hidden;
+		&:checked + label {
+			left: 70%;
+			&::after {
+				background-color: $lightgreen;
+			}
+		}
+	}
 }
 .emoji-slide {
-  label {
-    display: block;
-    width: 30%;
-    height: 120%;
-    position: absolute;
-    top: -6.5px;
-    left: -5px;
-    cursor: pointer;
-    transition: all 0.4s ease;
-    &::after {
-      content: "\1F641";
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
-  }
-  input[type="checkbox"] {
-    visibility: hidden;
-    &:checked + label {
-      left: 70%;
-      &::after {
-        content: "\1F642";
-      }
-    }
-  }
+	label {
+		display: block;
+		width: 30%;
+		height: 120%;
+		position: absolute;
+		top: -6.5px;
+		left: -5px;
+		cursor: pointer;
+		transition: all 0.4s ease;
+		&::after {
+			content: '\1F641';
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+	}
+	input[type='checkbox'] {
+		visibility: hidden;
+		&:checked + label {
+			left: 70%;
+			&::after {
+				content: '\1F642';
+			}
+		}
+	}
 }
 .neon-effect {
-  label {
-    width: 22px;
-    height: 22px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 1px solid $lightred;
-    transition: all 0.2s ease-in;
-    &::after {
-      content: "";
-      position: absolute;
-      top: -2px;
-      left: 6px;
-      width: 8px;
-      height: 18px;
-      border-right: 1px solid $lightred;
-      border-bottom: 1px solid $lightred;
-      transform: rotate(45deg);
-      opacity: 0;
-    }
-    &:hover:after {
-      opacity: 0.3;
-    }
-    &:hover {
-      box-shadow: 1px 1px 10px 4px $lightred;
-    }
-  }
-  input[type="checkbox"] {
-    visibility: hidden;
-    &:checked + label {
-      &::after {
-        opacity: 1;
-      }
-    }
-  }
+	label {
+		width: 22px;
+		height: 22px;
+		cursor: pointer;
+		position: absolute;
+		top: 0;
+		left: 0;
+		border: 1px solid $lightred;
+		transition: all 0.2s ease-in;
+		&::after {
+			content: '';
+			position: absolute;
+			top: -2px;
+			left: 6px;
+			width: 8px;
+			height: 18px;
+			border-right: 1px solid $lightred;
+			border-bottom: 1px solid $lightred;
+			transform: rotate(45deg);
+			opacity: 0;
+		}
+		&:hover:after {
+			opacity: 0.3;
+		}
+		&:hover {
+			box-shadow: 1px 1px 10px 4px $lightred;
+		}
+	}
+	input[type='checkbox'] {
+		visibility: hidden;
+		&:checked + label {
+			&::after {
+				opacity: 1;
+			}
+		}
+	}
 }
