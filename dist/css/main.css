@@ -1086,3 +1086,102 @@ form {
     text-align: center;
     word-spacing: 2px;
     line-height: 30px; }
+
+.grid {
+  display: flex;
+  flex-wrap: wrap; }
+  .grid div {
+    padding: 5px; }
+    .grid div span {
+      background-color: skyblue;
+      display: block;
+      padding: 0.3em 0;
+      text-align: center; }
+
+.center {
+  justify-content: center; }
+
+.grid > * {
+  flex: 1 1 auto;
+  box-sizing: border-box !important;
+  flex-grow: 0; }
+
+@media all and (max-width: 450px) {
+  .sm-1 > * {
+    width: 100% !important; }
+  .sm-2 > * {
+    width: 50% !important; }
+  .sm-3 > * {
+    width: 33.333% !important; }
+  .sm-3 > * {
+    width: 25% !important; } }
+
+@media (min-width: 450px) and (max-width: 700px) {
+  .md-1 > * {
+    width: 100% !important; }
+  .md-2 > * {
+    width: 50% !important; }
+  .md-3 > * {
+    width: 33.333% !important; }
+  .md-4 > * {
+    width: 25% !important; }
+  .md-5 > * {
+    width: 20% !important; }
+  .md-6 > * {
+    width: 16.66667% !important; }
+  .md-7 > * {
+    width: 14.28571% !important; }
+  .md-8 > * {
+    width: 12.5% !important; } }
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  .lg-1 > * {
+    width: 100% !important; }
+  .lg-2 > * {
+    width: 50% !important; }
+  .lg-3 > * {
+    width: 33.33333% !important; }
+  .lg-4 > * {
+    width: 25% !important; }
+  .lg-5 > * {
+    width: 20% !important; }
+  .lg-6 > * {
+    width: 16.66667% !important; }
+  .lg-7 > * {
+    width: 14.28571% !important; }
+  .lg-8 > * {
+    width: 12.5% !important; }
+  .lg-9 > * {
+    width: 11.11111% !important; }
+  .lg-10 > * {
+    width: 10% !important; }
+  .lg-11 > * {
+    width: 9.09091% !important; }
+  .lg-12 > * {
+    width: 8.33333% !important; } }
+
+@media (min-width: 1100px) {
+  .xl-1 > * {
+    width: 100% !important; }
+  .xl-2 > * {
+    width: 50% !important; }
+  .xl-3 > * {
+    width: 33.33333% !important; }
+  .xl-4 > * {
+    width: 25% !important; }
+  .xl-5 > * {
+    width: 20% !important; }
+  .xl-6 > * {
+    width: 16.66667% !important; }
+  .xl-7 > * {
+    width: 14.28571% !important; }
+  .xl-8 > * {
+    width: 12.5% !important; }
+  .xl-9 > * {
+    width: 11.11111% !important; }
+  .xl-10 > * {
+    width: 10% !important; }
+  .xl-11 > * {
+    width: 9.09091% !important; }
+  .xl-12 > * {
+    width: 8.33333% !important; } }
