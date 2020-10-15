@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/min/main.css" />
-    <script src="./js/index.js" defer></script>
-    <title>EAGLE CSS</title>
-    <style>
-      /* .container {
-        width: 800px;
-        margin: 2rem auto;
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
-      } */
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <!-- <button class="btn up-to-down border-1-dgray text-dgray bold">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/min/main.css" />
+		<script src="./js/index.js" defer></script>
+		<title>Eagle CSS</title>
+	</head>
+	<body>
+		<header id="header">
+			<nav>
+				<div class="logo">
+					<a href="#"><img src="../Asset 2.svg" alt="" /></a>
+				</div>
+			</nav>
+			<div class="links">
+				<button class="btn left-to-right text-dwhite bold text-md"><a href="#">Contact</a></button>
+				<button class="btn down-to-up text-dwhite bold text-md"><a href="#">About</a></button>
+				<button class="btn scale-from-center text-dwhite bold text-md"><a href="#">Home</a></button>
+				<button class="btn rotated-top-bottom-collide text-dwhite bold text-md"><a href="#">GitHub</a></button>
+				<input type="checkbox" id="hmenu" hidden />
+				<div class="container">
+					<label for="hmenu"></label>
+					<div id="hamburger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div>
+			<aside>
+				<button class="btn left-to-right text-dwhite bold text-md"><a href="#">Contact</a></button>
+				<button class="btn down-to-up text-dwhite bold text-md"><a href="#">About</a></button>
+				<button class="btn scale-from-center text-dwhite bold text-md"><a href="#">Home</a></button>
+				<button class="btn rotated-top-bottom-collide text-dwhite bold text-md"><a href="#">GitHub</a></button>
+			</aside>
+		</header>
+		<!-- <button class="btn up-to-down border-1-dgray text-dgray bold">
         BUTTON
       </button>
       <button class="btn left-to-right border-1-dgray text-dgray bold">
@@ -49,7 +67,7 @@
       >
         BUTTON
       </button> -->
-      <!-- <button class="btn btn-dred">BUTTON</button>
+		<!-- <button class="btn btn-dred">BUTTON</button>
       <button class="btn btn-dblue">BUTTON</button>
       <button class="btn btn-dgreen">BUTTON</button>
       <button class="btn btn-dgray">BUTTON</button>
@@ -58,8 +76,8 @@
       <button class="btn btn-lblue">BUTTON</button>
       <button class="btn btn-lgreen">BUTTON</button>
       <button class="btn btn-brown">BUTTON</button> -->
-      <!-- CHECK-BOXES -->
-      <!-- <div class="checkbox-slide simple-slide">
+		<!-- CHECK-BOXES -->
+		<!-- <div class="checkbox-slide simple-slide">
 				<input type="checkbox" id="simple-slide" checked />
 				<label for="simple-slide"></label>
 			</div>
@@ -75,64 +93,146 @@
 				<input type="checkbox" id="neon-effect" checked />
 				<label for="neon-effect"></label>
       </div> -->
-      <!-- CHECK-BOXES -->
-      <!-- NEON-BUTTONS -->
-      <!-- <button class="btn neon-btn-skyblue neon-btn bold">BUTTON</button>
-			<button class="btn neon-btn-red neon-btn bold">BUTTON</button>
-			<button class="btn neon-btn-lgreen neon-btn bold">BUTTON</button>
-			<button class="btn neon-btn-lpink neon-btn bold">BUTTON</button>
-			<button class="btn neon-btn-brown neon-btn bold">BUTTON</button>
-			<button class="btn neon-btn-lblack neon-btn bold">BUTTON</button>
-			<button class="btn neon-btn-orange neon-btn bold">BUTTON</button>
-      <button class="btn neon-btn-dblue neon-btn bold">BUTTON</button> -->
-      <!-- <form>
+		<!-- CHECK-BOXES -->
+		<!-- NEON-BUTTONS -->
+		<!-- <button class="btn neon-btn-skyblue neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+		   </button>
+			<button class="btn neon-btn-red neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+			</button>
+			<button class="btn neon-btn-lgreen neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+			</button>
+			<button class="btn neon-btn-lpink neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+			</button>
+			<button class="btn neon-btn-brown neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+			</button>
+			<button class="btn neon-btn-lblack neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+			</button>
+			<button class="btn neon-btn-orange neon-btn bold">
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+			</button>
+      <button class="btn neon-btn-dblue neon-btn bold">
+		  	   <span></span>
+			   <span></span>
+			   <span></span>
+			   <span></span>
+			   BUTTON
+	  </button> -->
+		<!-- <form>
 				<input type="text" class="animated-input" placeholder="email" />
 				<input type="password" class="glowing-input" placeholder="password" />
-      </form> -->
-
-      <!-- <div class="card">
-					<div class="card-front bg-dpink">
-						<h2>Amazing Card</h2>
+	  </form> -->
+		<!-- FLIPPING-CARDS -->
+		<!-- <section>
+				<input type="checkbox" id="flipping_card-1" hidden />
+				<label for="flipping_card-1">
+					<div class="card">
+						<div class="card-front bg-dpink">
+							<h2>Amazing Card</h2>
+						</div>
+						<div class="card-back bg-orange">
+							<h2 class="bold">Title of the Card</h2>
+							<h5 class="text-md">
+								Lore ipsum dolor sit amet consectetur adipisicing elit. Deserunt alias hic sapiente
+								omnis cupiditate, velit modi perferendis harum libero sit quo, ratione tempora suscipit
+								obcaecati incidunt? Ullam voluptatibus illo quidem!
+							</h5>
+							<a href="#" class="btn neon-btn-lblack neon-btn bold text-md">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								Click Here
+							</a>
+						</div>
 					</div>
-					<div class="card-back bg-orange">
-					 			<h2 class="bold">Title of the Card</h2>
-								<h5 class="text-md">
-									Lore ipsum dolor sit amet consectetur adipisicing elit. Deserunt alias hic sapiente
-									omnis cupiditate, velit modi perferendis harum libero sit quo, ratione tempora
-									suscipit obcaecati incidunt? Ullam voluptatibus illo quidem!
-								</h5>
-								<a href="#" class="btn neon-btn-lblack neon-btn bold text-md">Click Here</a>
+				</label>
+			</section>
+			<section>
+				<input type="checkbox" id="flipping_card-2" hidden />
+				<label for="flipping_card-2">
+					<div class="card">
+						<div class="card-front bg-dblue">
+							<h2>Amazing Card</h2>
+						</div>
+						<div class="card-back bg-brown">
+							<h2 class="bold">Title of the Card</h2>
+							<h5 class="text-md">
+								Lore ipsum dolor sit amet consectetur adipisicing elit. Deserunt alias hic sapiente
+								omnis cupiditate, velit modi perferendis harum libero sit quo, ratione tempora suscipit
+								obcaecati incidunt? Ullam voluptatibus illo quidem!
+							</h5>
+							<a href="#" class="btn neon-btn-lgreen neon-btn bold text-lg">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								Click Here
+							</a>
+						</div>
 					</div>
-			   </div>
-				<div class="card">
-					<div class="card-front  bg-dblue">
-						<h2>Amazing Card</h2>
+				</label>
+			</section>
+			<section>
+				<input type="checkbox" hidden id="flipping_card-3" />
+				<label for="flipping_card-3">
+					<div class="card">
+						<div class="card-front bg-dgray">
+							<h2>Amazing Card</h2>
+						</div>
+						<div class="card-back bg-lred">
+							<h2 class="bold">Title of the Card</h2>
+							<h5 class="text-md">
+								Lore ipsum dolor sit amet consectetur adipisicing elit. Deserunt alias hic sapiente
+								omnis cupiditate, velit modi perferendis harum libero sit quo, ratione tempora suscipit
+								obcaecati incidunt? Ullam voluptatibus illo quidem!
+							</h5>
+							<a href="#" class="btn neon-btn-dblue neon-btn bold text-lg">
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								Click Here
+							</a>
+						</div>
 					</div>
-					<div class="card-back bg-brown">
-					 			<h2 class="bold">Title of the Card</h2>
-								<h5 class="text-md">
-									Lore ipsum dolor sit amet consectetur adipisicing elit. Deserunt alias hic sapiente
-									omnis cupiditate, velit modi perferendis harum libero sit quo, ratione tempora
-									suscipit obcaecati incidunt? Ullam voluptatibus illo quidem!
-								</h5>
-								<a href='#' class="btn neon-btn-lgreen neon-btn bold text-lg">Click Here</a>
-					</div>
-			   </div>
-				<div class="card">
-					<div class="card-front bg-dgray">
-						<h2>Amazing Card</h2>
-					</div>
-					<div class="card-back bg-lred">
-					 			<h2 class="bold">Title of the Card</h2>
-								<h5 class="text-md">
-									Lore ipsum dolor sit amet consectetur adipisicing elit. Deserunt alias hic sapiente
-									omnis cupiditate, velit modi perferendis harum libero sit quo, ratione tempora
-									suscipit obcaecati incidunt? Ullam voluptatibus illo quidem!
-								</h5>
-								<a href='#' class="btn neon-btn-dblue neon-btn bold text-lg">Click Here</a>
-							</div>
-			   </div> -->
-      <div class="grid xl-7 lg-8 md-6 sm-2 center">
+				</label>
+			</section> -->
+		<!-- !FLIPPING-CARDS -->
+		<!-- <div class="grid xl-7 lg-8 md-6 sm-2 center">
 		  <div><span>1</span></div>
 		  <div><span>2</span></div>
 		  <div><span>3</span></div>
@@ -145,7 +245,6 @@
 		  <div><span>10</span></div>
 		  <div><span>11</span></div>
 		  <div><span>12</span></div>
-      </div>
-    </div>
-  </body>
+      </div> -->
+	</body>
 </html>

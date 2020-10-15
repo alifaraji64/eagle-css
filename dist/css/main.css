@@ -1051,7 +1051,34 @@ form {
   cursor: pointer;
   position: relative; }
 
-.card.is-flipped {
+#flipping_card-1:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-2:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-3:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-4:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-5:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-6:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-7:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-8:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-9:checked ~ label .card {
+  transform: rotateY(180deg); }
+
+#flipping_card-10:checked ~ label .card {
   transform: rotateY(180deg); }
 
 .card-front,
@@ -1062,7 +1089,8 @@ form {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border-radius: 16px;
-  box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
+  user-select: none; }
 
 .card-front {
   display: flex;
@@ -1185,3 +1213,65 @@ form {
     width: 9.09091% !important; }
   .xl-12 > * {
     width: 8.33333% !important; } }
+
+#header {
+  position: relative; }
+  #header nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #215aaf;
+    align-items: center; }
+    #header nav .logo a img {
+      width: 100px; }
+  #header .links {
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #header .links button {
+      margin: 0 10px; }
+    #header .links #hamburger {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      #header .links #hamburger span {
+        width: 90%;
+        height: 6px;
+        background-color: #ececec;
+        margin: 2px 0;
+        border-radius: 5px; }
+    #header .links .container {
+      width: 45px;
+      height: 40px;
+      position: relative;
+      padding-top: 4px; }
+      #header .links .container label {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        z-index: 2; }
+    #header .links #hmenu:checked ~ .container #hamburger span:nth-child(1) {
+      transition: transform 0.3s ease-in;
+      transform: rotate(45deg) translate(7px, 9px);
+      margin: 0; }
+    #header .links #hmenu:checked ~ .container #hamburger span:nth-child(2) {
+      display: none; }
+    #header .links #hmenu:checked ~ .container #hamburger span:nth-child(3) {
+      transition: transform 0.3s ease-in;
+      transform: rotate(-45deg) translate(-6px, 2px);
+      margin: 0; }
+  #header aside {
+    position: absolute;
+    max-width: 33%;
+    right: 0;
+    transform: translateX(33%) scaleX(0); }
+
+@media all and (max-width: 700px) {
+  header .links button {
+    display: none; } }

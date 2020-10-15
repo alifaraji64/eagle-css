@@ -2,141 +2,141 @@
 .grid {
 	display: flex;
 	flex-wrap: wrap;
-	div{
+	div {
 		padding: 5px;
-		span{
+		span {
 			background-color: skyblue;
 			display: block;
-			padding:0.3em 0;
+			padding: 0.3em 0;
 			text-align: center;
 		}
 	}
 }
-.center{
+.center {
 	justify-content: center;
 }
-.grid>*{
-	flex:1 1 auto;
+.grid > * {
+	flex: 1 1 auto;
 	box-sizing: border-box !important;
 	flex-grow: 0;
 }
 //FOR SMALL SCREENS => LESS THAN 450PX
-@media all and (max-width:$sm-screen){
-	.sm-1>*{
-		width:100% !important;
+@media all and (max-width: $sm-screen) {
+	.sm-1 > * {
+		width: 100% !important;
 	}
-	.sm-2>*{
-		width:50% !important;
+	.sm-2 > * {
+		width: 50% !important;
 	}
-	.sm-3>*{
-		width:33.333% !important;
+	.sm-3 > * {
+		width: 33.333% !important;
 	}
-	.sm-3>*{
-		width:25% !important;
+	.sm-3 > * {
+		width: 25% !important;
 	}
 }
 //FOR MEDIUM SCREENS => MORE THAN 450PX AND LESS THAN 700PX
-@media (min-width:$sm-screen) and (max-width:$md-screen){
-	.md-1>*{
-		width:100% !important;
+@media (min-width: $sm-screen) and (max-width: $md-screen) {
+	.md-1 > * {
+		width: 100% !important;
 	}
-	.md-2>*{
-		width:50% !important;
+	.md-2 > * {
+		width: 50% !important;
 	}
-	.md-3>*{
-		width:33.333% !important;
+	.md-3 > * {
+		width: 33.333% !important;
 	}
-	.md-4>*{
-		width:25% !important;
+	.md-4 > * {
+		width: 25% !important;
 	}
-	.md-5>*{
-		width:20% !important;
+	.md-5 > * {
+		width: 20% !important;
 	}
-	.md-6>*{
-		width:percentage(1/6) !important;
+	.md-6 > * {
+		width: percentage(1/6) !important;
 	}
-	.md-7>*{
-		width:percentage(1/7) !important;
+	.md-7 > * {
+		width: percentage(1/7) !important;
 	}
-	.md-8>*{
-		width:percentage(1/8) !important;
+	.md-8 > * {
+		width: percentage(1/8) !important;
 	}
 }
 //FOR LARGE SCREENS => MORE THAN 700PX AND LESS THEN 1100PX
-@media (min-width:$md-screen) and (max-width:$lg-screen){
-	.lg-1>*{
+@media (min-width: $md-screen) and (max-width: $lg-screen) {
+	.lg-1 > * {
 		width: 100% !important;
 	}
-	.lg-2>*{
-		width:50% !important;
+	.lg-2 > * {
+		width: 50% !important;
 	}
-	.lg-3>*{
-		width:percentage(1/3) !important;
+	.lg-3 > * {
+		width: percentage(1/3) !important;
 	}
-	.lg-4>*{
-		width:25% !important;
+	.lg-4 > * {
+		width: 25% !important;
 	}
-	.lg-5>*{
-		width:20% !important;
+	.lg-5 > * {
+		width: 20% !important;
 	}
-	.lg-6>*{
-		width:percentage(1/6) !important;
+	.lg-6 > * {
+		width: percentage(1/6) !important;
 	}
-	.lg-7>*{
-		width:percentage(1/7) !important;
+	.lg-7 > * {
+		width: percentage(1/7) !important;
 	}
-	.lg-8>*{
-		width:percentage(1/8) !important;
+	.lg-8 > * {
+		width: percentage(1/8) !important;
 	}
-	.lg-9>*{
-		width:percentage(1/9) !important;
+	.lg-9 > * {
+		width: percentage(1/9) !important;
 	}
-	.lg-10>*{
-		width:10% !important;
+	.lg-10 > * {
+		width: 10% !important;
 	}
-	.lg-11>*{
-		width:percentage(1/11) !important;
+	.lg-11 > * {
+		width: percentage(1/11) !important;
 	}
-	.lg-12>*{
-		width:percentage(1/12) !important;
+	.lg-12 > * {
+		width: percentage(1/12) !important;
 	}
 }
 //FOR EXTRA LARGE SCREENS => MORE THAN 1100PX
-@media (min-width:$lg-screen){
-	.xl-1>*{
+@media (min-width: $lg-screen) {
+	.xl-1 > * {
 		width: 100% !important;
 	}
-	.xl-2>*{
-		width:50% !important;
+	.xl-2 > * {
+		width: 50% !important;
 	}
-	.xl-3>*{
-		width:percentage(1/3) !important;
+	.xl-3 > * {
+		width: percentage(1/3) !important;
 	}
-	.xl-4>*{
-		width:25% !important;
+	.xl-4 > * {
+		width: 25% !important;
 	}
-	.xl-5>*{
-		width:20% !important;
+	.xl-5 > * {
+		width: 20% !important;
 	}
-	.xl-6>*{
-		width:percentage(1/6) !important;
+	.xl-6 > * {
+		width: percentage(1/6) !important;
 	}
-	.xl-7>*{
-		width:percentage(1/7) !important;
+	.xl-7 > * {
+		width: percentage(1/7) !important;
 	}
-	.xl-8>*{
-		width:percentage(1/8) !important;
+	.xl-8 > * {
+		width: percentage(1/8) !important;
 	}
-	.xl-9>*{
-		width:percentage(1/9) !important;
+	.xl-9 > * {
+		width: percentage(1/9) !important;
 	}
-	.xl-10>*{
-		width:10% !important;
+	.xl-10 > * {
+		width: 10% !important;
 	}
-	.xl-11>*{
-		width:percentage(1/11) !important;
+	.xl-11 > * {
+		width: percentage(1/11) !important;
 	}
-	.xl-12>*{
-		width:percentage(1/12) !important;
+	.xl-12 > * {
+		width: percentage(1/12) !important;
 	}
 }

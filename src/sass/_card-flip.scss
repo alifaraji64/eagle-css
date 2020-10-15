@@ -10,9 +10,47 @@
 	cursor: pointer;
 	position: relative;
 }
-.card.is-flipped {
+#flipping_card-1:checked ~ label .card {
 	transform: rotateY(180deg);
+	//display: none;
 }
+#flipping_card-2:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-3:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-4:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-5:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-6:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-7:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-8:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-9:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+#flipping_card-10:checked ~ label .card {
+	transform: rotateY(180deg);
+	//display: none;
+}
+
 .card-front,
 .card-back {
 	position: absolute;
@@ -22,6 +60,7 @@
 	-webkit-backface-visibility: hidden;
 	border-radius: 16px;
 	box-shadow: 0 3px 18px 3px rgba(0, 0, 0, 0.2);
+	user-select: none;
 }
 .card-front {
 	//background-color: $lightgreen;
